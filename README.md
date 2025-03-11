@@ -1,27 +1,32 @@
-# MyApp
+# 🚗 Predicción de Accidentes de Tránsito  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+Este repositorio contiene los resultados de un modelo de aprendizaje automático que predice la ocurrencia de accidentes de tránsito en Perú, utilizando datos abiertos y técnicas de Machine Learning.  
 
-## Development server
+## 📊 Resultados Visualizados  
+Los gráficos generados incluyen:  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Matriz de Confusión**: Muestra los aciertos y errores del modelo.  
+- **Curva ROC**: Evalúa la capacidad del modelo para distinguir entre accidentes y no accidentes.  
 
-## Code scaffolding
+### 🔗 **Ver los resultados en GitHub Pages**  
+Puedes ver los resultados directamente en:  
+[🔗 https://TU_USUARIO.github.io/NOMBRE_DEL_REPOSITORIO/](https://TU_USUARIO.github.io/NOMBRE_DEL_REPOSITORIO/)  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠 Herramientas utilizadas  
+- **Python** (pandas, scikit-learn, seaborn, matplotlib)  
+- **Machine Learning** (Random Forest, SMOTE para balanceo de datos)  
+- **Visualización de datos** (matplotlib, seaborn)  
+- **GitHub Pages** para publicar los resultados  
 
-## Build
+## 📂 Archivos en este repositorio  
+- `index.html` → Página web con los resultados  
+- `matriz_confusion.png` → Imagen de la matriz de confusión  
+- `curva_roc.png` → Imagen de la curva ROC  
+- `README.md` → Explicación del proyecto  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📈 ¿Cómo se generaron los gráficos?  
+Los gráficos fueron creados en Python y guardados como imágenes con el siguiente código:  
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```python
+plt.savefig("matriz_confusion.png")
+plt.savefig("curva_roc.png")
